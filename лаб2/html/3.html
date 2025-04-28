@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Стилизованные таблицы</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        table, td, th {
+            border: 1px solid rgb(222, 222, 222);
+        }
+        
+        th {
+            background-color: rgb(240, 240, 240);
+            padding: 10px;
+            text-align: left;
+        }
+        
+        td {
+            padding: 10px;
+        }
+        
+        tr:nth-child(odd) td {
+            background-color: rgb(240, 240, 240);
+        }
+        
+        tr:hover {
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Country</th>
+            <th>Population</th>
+            <th>Score</th>
+        </tr>
+        <tr>
+            <td>Somewhere</td>
+            <td>3M</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>Somewhere else</td>
+            <td>12M</td>
+            <td>125</td>
+        </tr>
+        <tr>
+            <td>That place</td>
+            <td>23M</td>
+            <td>235</td>
+        </tr>
+        <tr>
+            <td>Somewhere</td>
+            <td>3M</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>Somewhere else</td>
+            <td>12M</td>
+            <td>125</td>
+        </tr>
+        <tr>
+            <td>That place</td>
+            <td>23M</td>
+            <td>235</td>
+        </tr>
+        <tr>
+            <td>Somewhere</td>
+            <td>3M</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>Somewhere else</td>
+            <td>12M</td>
+            <td>125</td>
+        </tr>
+        <tr>
+            <td>That place</td>
+            <td>23M</td>
+            <td>235</td>
+        </tr>
+    </table>
+</body>
+</html>
+
