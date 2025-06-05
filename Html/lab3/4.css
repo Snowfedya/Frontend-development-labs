@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+header {
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+h1 {
+  margin: 0;
+}
+nav {
+  display: inline-block;
+  position: absolute;
+  bottom: 17px;
+  left: 300px;
+}
+nav a {
+  display: inline-block;
+  margin-right: 15px;
+  text-decoration: none;
+  color: #0e660d;
+  font-weight: bold;
+}
+h2 {
+  margin-top: 30px;
+  margin-bottom: 0px;
+  font-family: American Typewriter, serif;
+  font-size: 180%;
+  font-weight: normal;
+}
+hr {
+  border: none;
+  border-top: 3px solid #000;
+  margin: 20px 0;
+  height: 0;
+}

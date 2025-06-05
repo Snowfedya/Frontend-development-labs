@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Гибкий макет</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            gap: 20px;
+            padding: 20px; 
+            box-sizing: border-box;
+            background-color: #f5f5f5;
+        }
+         
+        header {
+            background-color: #ffffff;
+            padding: 30px;
+            text-align: left;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border: 1px solid #e0e0e0;
+        }
+         
+        .main-content {
+            display: flex;
+            flex-grow: 1;
+            gap: 20px;
+        }
+         
+        .main-section {
+            flex: 3;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border: 1px solid #e0e0e0;
+        }
+         
+        aside {
+            flex: 1;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border: 1px solid #e0e0e0;
+        }
+         
+        footer {
+            background-color: #ffffff;
+            padding: 20px;
+            text-align: left;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border: 1px solid #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>HEADER</p>
+    </header>
+    
+    <main class="main-content">
+        <section class="main-section">
+            <p>MAIN</p>
+        </section>
+        
+        <aside>
+            <p>ASIDE</p>
+        </aside>
+    </main>
+    
+    <footer>
+        <p>FOOTER</p>
+    </footer>
+</body>
+</html>

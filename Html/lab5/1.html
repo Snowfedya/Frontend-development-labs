@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Введение Media Queries</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+            padding: 15px;
+        }
+
+        span {
+            font-weight: bold;
+        }
+
+        span::after {
+            color: green;
+        }
+
+        .mq-width span::after {
+            content: "Viewport width is larger than 600px";
+        }
+
+        @media (max-width: 1000px) {
+            .mq-width span::after {
+                content: "";
+            }
+        }
+
+        .mq-height span::after {
+            content: "Viewport height is larger than 600px";
+        }
+
+        @media (max-height: 600px) {
+            .mq-height span::after {
+                content: "";
+            }
+        }
+
+        .mq-ar span::after {
+            content: "Aspect Ratio is larger than 8/5";
+        }
+
+        @media (max-aspect-ratio: 8/5) {
+            .mq-ar span::after {
+                content: "";
+            }
+        }
+    </style>
+</head>
+<body>
+<section class="mq-width">
+    <span>MQ Width: </span>
+</section>
+
+<section class="mq-height">
+    <span>MQ Height: </span>
+</section>
+
+<section class="mq-ar">
+    <span>MQ Aspect Ratio: </span>
+</section>
+</body>
+</html>

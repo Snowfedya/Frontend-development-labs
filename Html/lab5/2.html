@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .login-box {
+            background: #f9f9f9;
+            padding: 30px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 400px;
+            position: relative;
+        }
+
+        .tab {
+            position: absolute;
+            top: -15px;
+            left: 0;
+            background: #fff;
+            padding: 5px 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+
+        .form-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            gap: 10px;
+        }
+
+        .form-row label {
+            width: 90px;
+            font-weight: bold;
+        }
+
+        .input-group {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 5px 10px;
+            background: #fff;
+        }
+
+        .input-group i {
+            margin-right: 10px;
+            color: #555;
+        }
+
+        .input-group input {
+            border: none;
+            outline: none;
+            flex: 1;
+            padding: 8px;
+        }
+
+        button {
+            margin-top: 20px;
+            width: 100px;
+            padding: 10px;
+            background-color: #222;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #444;
+        }
+
+        @media (max-width: 500px) {
+            .login-box {
+                margin: 20px;
+                padding: 20px;
+            }
+
+            .tab {
+                left: 0;
+                font-size: 14px;
+            }
+
+            .form-row {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .form-row label {
+                width: auto;
+                margin-bottom: 5px;
+            }
+
+            button {
+                width: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="login-box">
+        <div class="tab">Login</div>
+        <form>
+            <div class="form-row">
+                <label for="username">Username</label>
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="username" placeholder="Enter username">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <label for="password">Password</label>
+                <div class="input-group">
+                    <i class="fas fa-key"></i>
+                    <input type="password" id="password" placeholder="Enter password">
+                </div>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

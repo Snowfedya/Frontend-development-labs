@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox Фотогалерея</title>
+    <style>
+        body {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 0;
+          padding: 0;
+          text-align: center;
+        }
+
+        section.gallery {
+          width: 100%;
+        }
+
+        section.gallery ul {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          padding: 0;
+          margin: 10px 0;
+          list-style: none;
+        }
+
+        section.gallery li {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 0.4rem solid black;
+          padding: 1.0rem;
+          margin: 1.5rem;
+        }
+
+        section.gallery li.small-img img {
+          width: 300px;
+          height: 200px;
+        }
+
+        section.gallery li.large-img img {
+          width: 300px;
+          height: 450px;
+        }
+    </style>
+  </head>
+  <body>
+    <section class="gallery">
+      <ul>
+        <li class="large-img">
+          <img src="3.1. img.jpg" alt="Изображение 1" />
+        </li>
+        <li class="small-img">
+          <img src="3.2. img.jpg" alt="Изображение 2" />
+        </li>
+        <li class="large-img">
+          <img src="3.3. img.jpg" alt="Изображение 3" />
+        </li>
+      </ul>
+      <ul>
+        <li class="middle-img">
+          <img src="3.4. img.jpg" alt="Изображение 4" />
+        </li>
+        <li class="small-img">
+          <img src="3.5. img.jpg" alt="Изображение 5" />
+        </li>
+        <li class="large-img">
+          <img src="3.6. img.jpg" alt="Изображение 6" />
+        </li>
+      </ul>
+      <ul>
+        <li class="large-img">
+          <img src="3.7. img.jpg" alt="Изображение 7" />
+        </li>
+        <li class="large-img">
+          <img src="3.8. img.jpg" alt="Изображение 8" />
+        </li>
+        <li class="small-img">
+          <img src="3.9. img.jpg" alt="Изображение 9" />
+        </li>
+      </ul>
+    </section>
+  </body>
+</html>

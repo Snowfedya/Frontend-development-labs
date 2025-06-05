@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Галерея</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  
+  body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+  }
+
+  /* Контейнер для галереи */
+  .gallery-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* Галерея */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, auto); /* Три автоматические колонки */
+    gap: 50px;
+    /* Важные свойства для выравнивания */
+    justify-content: center; /* Центрируем по горизонтали */
+    justify-items: center;  /* Каждый элемент выравниваем по центру своей ячейки */
+    align-items: center;   /* Центрируем элементы по вертикали */
+  }
+
+  /* Стили для элементов галереи */
+  .gallery li {
+    list-style: none;
+    border: 12px solid #000;
+    background-color: #fff;
+    padding: 10px;
+    /* Убираем фиксированные размеры, используем автоматические */
+    width: auto;
+    height: auto;
+  }
+
+  /* Горизонтальные изображения */
+  .gallery li.horizontal {
+    width: 300px;
+    aspect-ratio: 4 / 3;
+  }
+
+  /* Вертикальные изображения */
+  .gallery li.vertical {
+    width: 225px;
+    aspect-ratio: 3 / 4;
+  }
+
+  .gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* Медиа-запросы для адаптивности */
+  @media (max-width: 1000px) {
+    .gallery {
+      grid-template-columns: repeat(2, auto);
+      gap: 30px;
+    }
+  }
+
+  @media (max-width: 650px) {
+    .gallery {
+      grid-template-columns: auto;
+      gap: 20px;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="gallery-container">
+  <ul class="gallery">
+    <!-- Первый блок A -->
+    <li class="horizontal"><img src="pic/picture1.jpg" alt="Подсолнухи"></li>
+    <li class="horizontal"><img src="pic/picture2.jpg" alt="Прогулка под пирсом"></li>
+    <li class="vertical"><img src="pic/picture3.jpg" alt="Скейтборд на закате"></li>
+    
+    <!-- Первый блок B -->
+    <li class="horizontal"><img src="pic/picture4.jpg" alt="Одиночная пальма"></li>
+    <li class="vertical"><img src="pic/picture5.jpg" alt="Серфер на фоне заката"></li>
+    <li class="vertical"><img src="pic/picture6.jpg" alt="Кокосовый лёд"></li>
+    
+    <!-- Второй блок A -->
+    <li class="horizontal"><img src="pic/picture1.jpg" alt="Подсолнухи (повтор)"></li>
+    <li class="horizontal"><img src="pic/picture2.jpg" alt="Прогулка под пирсом (повтор)"></li>
+    <li class="vertical"><img src="pic/picture3.jpg" alt="Скейтборд (повтор)"></li>
+    
+    <!-- Второй блок B -->
+    <li class="horizontal"><img src="pic/picture4.jpg" alt="Одиночная пальма (повтор)"></li>
+    <li class="vertical"><img src="pic/picture5.jpg" alt="Серфер (повтор)"></li>
+    <li class="vertical"><img src="pic/picture6.jpg" alt="Кокосовый лёд (повтор)"></li>
+  </ul>
+</div>
+</body>
+</html>
